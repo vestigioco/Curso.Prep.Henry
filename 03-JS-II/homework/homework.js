@@ -84,8 +84,9 @@ function esDiezOCinco(numero) {
 	// Tu código:
 	if (numero === 10 || numero === 5) {
 		return true;
+	} else {
+		return false;
 	}
-	return false;
 }
 
 function estaEnRango(numero) {
@@ -94,8 +95,9 @@ function estaEnRango(numero) {
 	// Tu código:
 	if (numero > 20 && numero < 50) {
 		return true;
+	} else {
+		return false;
 	}
-	return false;
 }
 
 function esEntero(numero) {
@@ -108,8 +110,9 @@ function esEntero(numero) {
 	// Tu código:
 	if (Math.floor(numero) === numero) {
 		return true;
+	} else {
+		return false;
 	}
-	return false;
 }
 
 function fizzBuzz(numero) {
@@ -153,12 +156,8 @@ function esPrimo(numero) {
 	// Pista: un número primo solo es divisible por sí mismo y por 1
 	// Pista 2: Puedes resolverlo usando un bucle `for`
 	// Nota: Los números 0 y 1 NO son considerados números primos
-	if (numero < 2) {
-		return false;
-	}
-	if (numero === 2) {
-		return true;
-	}
+	if (numero < 2) return false;
+	if (numero === 2) return true;
 	for (var i = 2; i < numero; i++) {
 		if (numero % i === 0) {
 			return false;
@@ -173,8 +172,9 @@ function esVerdadero(valor) {
 	//Escribe tu código aquí
 	if (valor) {
 		return 'Soy verdadero';
+	} else {
+		return 'Soy falso';
 	}
-	return 'Soy falso';
 }
 
 function tablaDelSeis() {
@@ -193,8 +193,9 @@ function tieneTresDigitos(numero) {
 	//Escribe tu código aquí
 	if (numero > 99 && numero < 1000) {
 		return true;
+	} else {
+		return false;
 	}
-	return false;
 }
 
 function doWhile(numero) {
